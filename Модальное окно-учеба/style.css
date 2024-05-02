@@ -1,0 +1,75 @@
+.modal-window {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    display: none;
+}
+.content {
+    width: 90%;
+    height: 90%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: none;
+}
+.content-btn {
+    display: flex;
+    justify-content: end;
+}
+.close-btn {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.close-btn-x {
+  width: 30px;
+}
+
+.box-change-color {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20%;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border: 1px solid black;
+    margin: auto;
+}
+.change-color {
+    padding: 20px;
+    margin: auto;
+}
+
+.fon-btn {
+    margin: 30%;
+}
+.btn {
+    padding: 10px 100px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer;
+    background-color: green;
+    border-radius: 10px;
+}
+.btn:hover {
+    background-color: red;
+}
+
+.dis {
+    display: block;
+}

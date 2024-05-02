@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.note {
+    color: #C0C0C0;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.text {
+    color: #C0C0C0;
+    font-size: 14px;
+    line-height: 20px;
+}
+.button {
+    color: #000000;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    border: none;
+    gap: 5px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+.photoparameters {
+    color: #FFFFFF;
+    gap: 16px;
+}
+.textparameters {
+    display: flex;
+    gap: 6px;
+}
+.textparameters sub {
+    font-size: 12px;
+    line-height: 12px;
+}
+/*              ПЕРВЫЙ БЛОК                */
+.upperblock {
+    background-color: #181818;
+}
+.upperblock-header-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 140px 24px 152px;
+}
+.upperblock-header-links a {
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    padding-right: 32px;
+}
+.upperblock-linksbutton button {
+    padding: 9px 20px 13px;
+}
+/*              ВТОРОЙ БЛОК                */
+.aperturestudios {
+    background-image: url("./img/aperturestudios.png");
+    background-size: cover;
+    height: 716px;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.aperturestudios-title {
+    text-align: center;
+    max-width: 580px;
+    margin: 0 auto;
+}
+.aperturestudios-title h1 {
+    color: #FFFFFF;
+    font-size: 54px;
+    line-height: 59px;
+    padding-top: 1px;
+}
+.aperturestudios-text {
+    padding-top: 18px;
+    text-align: center;
+}
+.photoparameters-aperture {
+    display: flex;
+    justify-content: flex-end;
+    padding: 14px 40px 40px;
+}
+/*               ТРЕТИЙ БЛОК                 */
+.whatwedo {
+    background-color: #000000;
+    padding: 113px 136px 100px;
+}
+.whatwedo-title {
+    text-align: center;
+}
+.whatwedo-title h2 {
+    color: #FFFFFF;
+    font-size: 40px;
+    line-height: 42px;
+}
+.whatwedo-title p {
+    color: #C0C0C0;
+    font-size: 23px;
+    line-height: 30px;
+    padding-top: 15px;
+}
+.whatwedo-photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 42px;
+}
+.whatwedo-photo {
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+    flex: 1 1 calc(50% - 16px);
+}
+.product {
+    background-image: url("./img/product.png");
+}
+.architecture {
+    background-image: url("./img/architecture.png");
+}
+.drone {
+    background-image: url("./img/drone.png");
+}
+.wildlife {
+    background-image: url("./img/wildlife.png");
+}
+.textinsidephoto {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30px 30px;
+}
+.whatwedo-text {
+    padding-top: 10px;
+}
+.textinsidephoto button {
+    padding: 5px 15px 5px 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+}
+/*                   ЧЕТВЁРТЫЙ БЛОК                  */
+.sunsetfuji {
+    background-image: url("./img/fuji.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.fuji {
+    padding-right: 62px;
+}
+.fuji-note {
+    color: #FFFFFF;
+}
+.fuji-text {
+    width: 298px;
+}
+.fuji-japan {
+    display: flex;
+    padding: 204px 40px 45px 0;
+}
+/*                   ПЯТЫЙ БЛОК                  */
+.gear-cage {
+    background-color: #000000;
+    display: flex;
+}
+.thatweuse {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+}
+.thatweuse h2 {
+    color: #FFFFFF;
+    font-size: 28px;
+    line-height: 32px;
+    padding-top: 6px;
+}
+.thatweuse-text {
+    color: #FFFFFF;
+    padding-top: 16px;
+    max-width: 514px;
+}
+.thatweuse button {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    max-width: 152px;
+    margin-top: 20px;
+}
+.photoparameters-gear {
+    background-image: url("./img/gearcage.png");
+    background-size: cover;
+    height: 540px;
+    flex-basis: 50%;
+    background-position: center center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 40px;
+}
+/*                            ШЕСТОЙ БЛОК                            */
+.monsteraleafs {
+    background-image: url("./img/monstera.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.leafs {
+    padding-right: 87px;
+}
+.leafs-note {
+    color: #FFFFFF;
+}
+.leafs-text {
+    max-width: 273px;
+}
+.leafs-costarica {
+    display: flex;
+    padding: 204px 40px 40px;
+}
+/*                            СЕДЬМОЙ БЛОК                            */
+.pastclients {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 113px 0 140px;
+}
+.clients h2 {
+    color: #FFFFFF;
+    font-size: 40px;
+    line-height: 42px;
+}
+.clients p {
+    color: #C0C0C0;
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 15px;
+}
+.company {
+    display: flex;
+    align-items: center;
+    gap: 109px;
+    padding-top: 82px;
+}
+/*                            ВОСЬМОЙ БЛОК                            */
+.starfall-himalayas {
+    background-image: url("./img/himalayas.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.himalayas {
+    padding-right: 106px;
+}
+.himalayas-note {
+    color: #FFFFFF;
+}
+.himalayas-text {
+    max-width: 241px;
+}
+.himalayas-nepal {
+    display: flex;
+    padding: 194px 40px 40px;
+}
+/*                            ДЕВЯТЫЙ БЛОК                            */
+.need-help {
+    background-color: #000000;
+}
+.needhelp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 113px 0 108px;
+}
+.needhelp h2 {
+    font-size: 40px;
+    line-height: 42px;
+    color: #FFFFFF;
+    max-width: 571px;
+}
+.needhelp p {
+    font-size: 24px;
+    line-height: 30px;
+    color: #C0C0C0;
+    padding-top: 15px;
+}
+.needhelp button {
+    margin-top: 22px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+/*                            ДЕСЯТЫЙ БЛОК                            */
+.aperture-end {
+    background-color: #000000;
+    max-width: 100%;
+    padding: 10px;
+}
+.aperture-end h2{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+}
+.aperture-end p {
+    font-size: 13px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+.aperture-ends {
+    max-width: 1168px;
+    margin: 100px auto;
+}
+.business-pages-photo-video {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 36px;
+}
+.photo-video p {
+    padding-top: 20px;
+}
+.business-pages {
+    display: flex;
+    padding-right: 100px;
+}
+.business-pages a {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+.business-areas {
+    display: flex;
+    padding-right: 55px;
+    flex-direction: column;
+}
+.pages {
+    display: flex;
+    flex-direction: column;
+}
+.newsletter {
+    border-top: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    padding: 36px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.newsletter p {
+    padding-top: 20px;
+}
+.newsletter h2 {
+    color: #FFFFFF;
+}
+.newsletter-email-form {
+    position: relative;
+    width: 460px;
+    height: 52px;
+}
+.newsletter-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 6px;
+    margin: auto;
+    cursor: pointer;
+    background: #000000;
+    border-radius: 11px;
+    width: 60px;
+    height: 30px;
+    border: none;
+}
+.newsletter-email {
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+}
+.aperture-links {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 56px;
+}
+.links {
+    display: flex;
+    gap: 20px;
+}

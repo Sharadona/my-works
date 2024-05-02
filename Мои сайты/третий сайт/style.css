@@ -1,0 +1,491 @@
+@font-face {
+	font-family: 'OpenSansCondensed';
+    font-style: normal;
+    font-weight: 700; 
+	src: url("./fonts/OpenSansCondensed-Bold.woff2") format("woff2"),
+        url("./fonts/OpenSansCondensed-Bold.woff") format("woff"); 
+}
+@font-face {
+	font-family: 'OpenSansCondensed';
+    font-style: normal;
+    font-weight: 400; 
+	src: url("./fonts/OpenSansCondensed-Regular.woff2") format("woff2"),
+        url("./fonts/OpenSansCondensed-Regular.woff") format("woff"); 
+}
+@font-face {
+	font-family: 'OpenSansCondensed';
+    font-style: normal;
+    font-weight: 300; 
+	src: url("./fonts/OpenSansCondensed-Light.woff2") format("woff2"),
+        url("./fonts/OpenSansCondensed-Light.woff") format("woff"); 
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'OpenSansCondensed', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+button {
+    background: transparent;
+    border: none;
+}
+span {
+    color: #D1A954;
+}
+/*                                 !ПЕРВЫЙ БЛОК!                                  */
+.grand-theatre {
+    background: linear-gradient(0deg, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url("./img/grand-theatre.png");
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 208px;
+}
+.kontakt-inform {
+    background: rgba(51, 51, 51, 0.75);
+    width: 150px;
+    height: 100%;
+    
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+.kontakt-inform h2 {
+    color: #C4C4C4;
+    writing-mode: vertical-rl;
+    rotate: -180deg;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.fa {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 30px;
+}
+a:hover i {
+    color: #D1A954;;
+}
+
+.main-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+
+    margin: auto;
+    padding: 50px 0 191px;
+
+    text-transform: uppercase;
+}
+.menu {
+    display: flex;
+    gap: 30px;
+
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+}
+.main-links a {
+    color: #FFFFFF;
+    text-decoration: none; 
+    font-weight: 700;
+}
+.number {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+}
+.number:after {
+    background-color: #D1A954;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    transition: width .5s ;
+}
+.number:hover:after {
+    width: 100%;
+}
+
+.grand-theatre-photo {
+    max-width: 1110px;
+    margin: auto;
+
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.theatre {
+    text-align: left;
+}
+.theatre h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 87px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+.theatre p {
+    max-width: 540px;
+    
+    font: 400 14px/21px "Open Sans", sans-serif;
+    
+    padding-bottom: 50px;
+}
+.theatre button {
+    background-color: #D1A954;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 20px 47px;
+    border: none;
+    cursor: pointer;
+}
+.theatre-slide {
+    max-width: 370px;
+    margin-right: 75px;
+}
+.slide {
+    padding-bottom: 35px;
+}
+.theatre-slide button {
+  display: flex;
+}
+.grand-theatre-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grand-theatre-button img {
+    margin: auto;
+}
+.button-theatre {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    color: #C4C4C4;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+   
+    transition: color .3s ;
+}
+.button-theatre:hover, 
+.button-theatre:hover i {
+    color: #FFFFFF;
+}
+.button-left i {
+    padding-right: 25px;
+}
+.button-right i {
+    padding-left: 25px;
+}
+.burger-menu {
+    display: none;
+}
+.kontakt-inform-menu {
+    display: none;
+}
+
+/*                                                           !ВЕРСИЯ 1439px!                                                                           */
+@media (max-width: 1439px) {
+    .main-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu  {
+        margin: auto;
+        width: 652px;
+    }
+    .number {
+        margin: 50px auto 0;
+    }
+    .theatre {
+        margin: auto;
+        width: 652px;
+    }
+    .theatre-slide {
+        display: none;
+    }
+}
+/*                                                           !ВЕРСИЯ 991px!                                                                           */
+@media (max-width: 991px) {
+    .kontakt-inform,
+    .menu {
+        display: none;
+   }
+   .burger-menu {
+        display: block;
+   }
+    .main-links {
+        max-width: 690px;
+        flex-direction: row;
+    }
+   .number {
+        margin: 0;
+   }
+   .number:after {
+        width: 100%;
+   }
+   .theatre {
+        max-width: 690px;
+        width: 100%;
+   }
+   .kontakt-inform-menu {
+        background: #333333;
+        width: 300px;
+        height: 100%;
+        padding: 40px;
+        
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+   }
+   .hidden {
+    display: none;
+   }
+   .close {
+        display: flex;
+        justify-content: flex-end;
+   }
+   .menu-links {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        padding-top: 86px;
+
+        font-size: 24px;
+        line-height: 33px;
+        letter-spacing: 0.05em;
+   }
+   .kontakt-links {
+        padding: 90px 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: self-end;
+        gap: 50px;
+   }
+   .kontakt-links1 {
+        display: flex;
+        gap: 60px;
+   }
+   .kontakt-links2 {
+        display: flex;
+        align-items: self-end;
+        gap: 50px;
+   }
+}
+/*                                                           !ВЕРСИЯ 767px!                                                                           */
+@media (max-width: 767px) {
+    .grand-theatre {
+        padding: 0 32px 105px;
+    }
+}
+/*                                  !ВТОРОЙ БЛОК!                                  */
+.about-theatre {
+    background-color: #333333;
+    padding: 150px 0;
+}
+
+.central-heading {
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    text-align: center;
+    padding-bottom: 100px;
+}
+.central-heading:first-letter {
+    color: #D1A954;
+}
+
+.best-little-photo {
+    max-width: 1110px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.best-theatre {
+    max-width: 445px;
+}
+.best-theatre h2 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    padding-bottom: 40px;
+}
+.best-theatre p {
+    color: #FFFFFF;
+    font: 400 14px/21px "Open Sans", sans-serif;
+}
+
+.little-theatre h2 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.little-theatre p {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    padding-top: 15px;
+}
+.little-theatre img {
+    padding-top: 30px;
+}
+/*                                                           !ВЕРСИЯ 1040px!                                                                           */
+@media (max-width: 1040px) {
+    .photo-theatre {
+        display: none;
+    }
+
+    .best-little-photo {
+        justify-content: center;
+        gap: 30px;
+    }   
+}
+/*                                                           !ВЕРСИЯ 767px!                                                                           */
+@media (max-width: 767px) {
+    .about-theatre {
+        padding: 80px 0;
+    }
+    .about-theatre h2 {
+        padding-bottom: 60px;
+    }
+    .best-little-photo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .best-theatre h2 {
+        padding-bottom: 40px;
+    }
+    .little-theatre h2 {
+        padding-bottom: 0;
+    }
+    .little-theatre img {
+        max-width: 70px;
+        height: 100px;
+    }
+    .little-text {
+        display: flex;
+        gap: 60px;
+    }
+}
+/*                                  !ТРЕТИЙ БЛОК!                                  */
+.our-productions {
+    background-color: #333333;
+}
+
+.productions h3 {
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 65px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    text-align: center;
+    padding-bottom: 100px;
+}
+.slider {
+    display: flex;
+    justify-content: center;
+}
+
+.slide-production {
+    position: relative;
+}
+.slide-production img {
+    width: 100%;
+}
+.slide-production-preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(51, 51, 51, 0.6);
+    opacity: 1;
+    transition: .3s;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.slide-production:hover .slide-production-preview {
+    background-color: rgba(51, 51, 51, 0);
+    opacity: 0;
+}
+.slide-production-preview p {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+}
+.slide-production-preview p:nth-child(2) {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+
+    writing-mode: vertical-rl;
+    rotate: -180deg;
+}
+.slide-production:hover .slide-production-magnifier {
+    opacity: 1;
+}
+.slide-production-magnifier {
+    border-radius: 50%;
+    background-color: #D1A954;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+
+    cursor: pointer;
+    opacity: 0;
+    transition: .3s;
+}
+.slide-production-magnifier i {
+    color: #FFFFFF;
+}
+

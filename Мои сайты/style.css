@@ -1,0 +1,14 @@
+.main-block {
+    background-image: url("./img/kankuro.jpg");
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    font-size: 55px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}

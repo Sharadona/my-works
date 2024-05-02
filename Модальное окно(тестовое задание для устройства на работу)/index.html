@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Учусь программированию</title>
+</head>
+<body>
+    <div class="title"></div>
+    <div class="modal-window">
+        <div class="modal-window-close-btn">
+            <button class="close-btn" type="button">
+                <img class="close-btn-x" src="./img/end.svg">
+            </button>
+        </div>
+        <div class="modal-window-picture">
+            <img class="modal-window-picture-model">
+        </div>
+            <form class="modal-window-content">
+                <div class="content">
+                    <p class="main-inform">Рады видеть вас вновь!</p>
+                    <p class="main-inform">Давайте будем на связи?</p> 
+                    <p class="general-inform">
+                        Оставьте телефон - не пропускайте распродажи
+                        и раньше всех узнавайте о выходе новых коллекций.
+                    </p>  
+                </div>
+                <div class="modal-window-input">
+                    <input type="tel" class="input" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="modal-window-btn">
+                    <button type="submit" class="btn">ОСТАВАТЬСЯ НА СВЯЗИ</button>
+                </div>
+            </form>
+        <div class="modal-window-end none">
+            <h2 class="main-inform">Спасибо!</h2>
+            <p class="general-inform">Вы будете первым, кто узнает о новой коллеции!</p>
+        </div>
+    </div>
+    <div class="fon-open-btn">
+        <button type="text" class="open-btn">НАЖМИ МЕНЯ!</button>
+    </div>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="script.js"></script>
+</body>
+</html>
